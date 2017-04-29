@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="script.js"></script>
+<style> .test{ opacity: .5} </style>
+</head>
+<body>
+<h1 class="test">Hola</h1>
+</body>
+</html>

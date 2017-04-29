@@ -1,0 +1,33 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+            android:key="score_storage"
+            android:title="@string/pref_title_save_score"
+            android:summary="@string/pref_description_save_score"
+            android:defaultValue="false"/>
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+            android:key="user_name"
+            android:title="@string/pref_title_user_name"
+            android:defaultValue="@string/pref_default_display_name"
+            android:selectAllOnFocus="true"
+            android:inputType="textCapWords"
+            android:capitalize="words"
+            android:singleLine="true"
+            android:maxLines="1"/>
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <ListPreference
+            android:key="list_difficulty"
+            android:title="@string/pref_title_difficulty"
+            android:defaultValue="180"
+            android:entries="@array/pref_list_difficulty"
+            android:entryValues="@array/pref_list_difficulty_values"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"/>
+
+</PreferenceScreen>

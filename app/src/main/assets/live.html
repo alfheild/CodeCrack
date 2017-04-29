@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Scoreboard</title>
+</head>
+<body>
+<h1>Live Scoreboard</h1>
+<ul id="scores"></ul>
+</body>
+<script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+<script>
+    var list = document.getElementById("scores");
+    var types = ["JAVA", "PHP", "JS", "HTML"];
+    var diff = [];
+    diff[180] = "Easy";
+    diff[120] = "Medium";
+    diff[60] = "Hard";
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDHHQ4TJDIXklDELrVfJ2jFU4hErz5vdOM",
+        authDomain: "codecrack-9da03.firebaseapp.com",
+        databaseURL: "https://codecrack-9da03.firebaseio.com",
+        projectId: "codecrack-9da03",
+        storageBucket: "codecrack-9da03.appspot.com",
+        messagingSenderId: "277048638154"
+    };
+    firebase.initializeApp(config);
+    var database = firebase.database().ref('scoreboard');
+    database.on('child_added', function (snapshot) {
+        var data = snapshot.val();
+        list.innerHTML += '<li>' + diff[data.difficulty] + ' | ' + data.score + ' | ' + data.name + ' | ' + types[data.type] + '</li>';
+    })
+</script>
+</html>

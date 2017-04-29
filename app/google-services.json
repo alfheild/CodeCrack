@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "277048638154",
+    "firebase_url": "https://codecrack-9da03.firebaseio.com",
+    "project_id": "codecrack-9da03",
+    "storage_bucket": "codecrack-9da03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277048638154:android:e852da142e953714",
+        "android_client_info": {
+          "package_name": "net.ddns.pytxy.codecrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277048638154-sni1t96i76gn0jf0r79rg8kidrl8j0uo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.ddns.pytxy.codecrack",
+            "certificate_hash": "58e999b566771baccf23e40b8b5240a7e14edec1"
+          }
+        },
+        {
+          "client_id": "277048638154-n3u18ddrhbhr4af15i1gikgrbfr9fsn7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTA8_5Ba7yICr7_HOzcGqLGhOK1MQSais"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "277048638154-n3u18ddrhbhr4af15i1gikgrbfr9fsn7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

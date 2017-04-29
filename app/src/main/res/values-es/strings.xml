@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CodeCrack</string>
+    <string name="action_settings">Preferencias</string>
+    <string name="description">Selecciona un lenguaje</string>
+    <string name="live_scoreboard">Puntuaciones en directo</string>
+    <string name="nav_about">Acerca de</string>
+    <string name="nav_scoreboard">Puntuaciones</string>
+    <string name="nav_settings">Preferencias</string>
+    <string name="no_scores">No hay puntuaciones...</string>
+</resources>

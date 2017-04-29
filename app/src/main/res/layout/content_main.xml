@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:id="@+id/content_main"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#1C1C1C"
+        tools:showIn="@layout/app_bar_main"
+        tools:context="net.ddns.pytxy.codecrack.MainActivity"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:weightSum="1">
+
+    <TextView
+            android:text="@string/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/app_title"
+            android:textAlignment="center"
+            android:textSize="46sp"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/background_light"/>
+
+    <TextView
+            android:text="@string/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/subtitle"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@android:color/background_light"/>
+
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:id="@+id/b_java"
+                    android:background="@drawable/java"
+                    android:layout_height="125dp"/>
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:id="@+id/b_php"
+                    android:background="@drawable/php"
+                    android:layout_height="125dp"/>
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:id="@+id/b_js"
+                    android:background="@drawable/js"/>
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:id="@+id/b_html"
+                    android:background="@drawable/html"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

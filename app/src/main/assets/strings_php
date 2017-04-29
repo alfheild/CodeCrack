@@ -1,0 +1,11 @@
+<?php
+session_start();
+$id = $_SESSION['id'];
+$user = sqlQuery("select * from users where id=$id");
+if ($id === $_GET['id']) {
+foreach ($user as $attributeName => $value)
+echo "<li>$attributeName => $value</li>";}
+else {
+header("HTTP/1.0 403 Forbidden");
+echo "You don't have permission for this.";}
+?>

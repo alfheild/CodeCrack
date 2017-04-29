@@ -1,0 +1,11 @@
+(HTML) <button onclick="loadWeather()">Load Weather</button>
+(HTML) <div id="lediv"></div>
+function loadWeather() {
+var div = document.getElementById("lediv");
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200)
+div.innerHTML += this.responseText; };
+xhttp.open("GET", "wttr.in", true);
+xhttp.send();
+}
